@@ -39,6 +39,19 @@ Transform YouTube videos from your favorite channels into beautifully formatted 
    python main.py
    ```
 
+### Codex Quick Start
+
+Open this repository in Codex and ask it to follow `AGENTS.md`. Then run:
+
+```bash
+bash setup-codex.sh
+bash healthcheck.sh
+# Add API keys to .env and channel handles to channels.txt
+bash run-ebook.sh
+```
+
+`setup-codex.sh` creates a local `.venv`, installs requirements, and creates `.env` from the example without overwriting an existing file. `healthcheck.sh` checks Python syntax and reports missing configuration without printing secrets.
+
 ## Getting API Keys
 
 ### YouTube Data API (Free)
